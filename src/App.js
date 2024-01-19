@@ -1,11 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AddTodo from "./components/AddTodo";
+import Todos from "./components/Todos";
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Learn about redux toolkit</h1>
-    </div>
+    <main
+      className="flex justify-center flex-col items-center h-screen w-screen relative"
+    >
+      <div>
+        <h1 className="text-xl">This is test App for Redux</h1>
+      </div>
+      <div>
+        <AddTodo />
+        <Todos />
+      </div>
+    </main>
   );
 }
 
